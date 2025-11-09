@@ -1,0 +1,43 @@
+export function FAQBox({ title, children }) {
+  return (
+    <details open className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  )
+}
+
+# Solução de Problemas
+
+## Perguntas Frequentes [#faq]
+
+O RádioBS FAQ é uma coleção de perguntas e respostas úteis sobre o projeto. Se você tiver uma pergunta que não foi respondida aqui
+[Abrir Ticket](https://www.lugsoft.com.br/central/submitticket.php).
+
+<FAQBox title="Por que as páginas não funcionam - Erro 404?">
+    Certifique-se de enviar o arquivo `.htaccess` fornecido para a raiz `public_html` da hospedagem. O funcionamento adequado das páginas depende disso.
+</FAQBox>
+
+<FAQBox title="Por que há problema para salvar conteúdo ou definições?">
+    Verifique as permissões das pastas e arquivos. Geralmente, as permissões devem ser definidas como `755` para pastas e `644` para arquivos.
+</FAQBox>
+
+<FAQBox title="Por que a atualização não funciona?">
+    Para que as atualizações funcionem, é necessário habilitar a extensão `allow_url_fopen`  ou `cURL` nas configurações do PHP.
+</FAQBox>
+
+<FAQBox title="Por que não consigo enviar arquivos (upload)?">
+    Aumente o valor em MB do `upload_max_filesize` e `post_max_size` nas configurações do PHP para um valor superior.
+</FAQBox>
+
+<FAQBox title="Por que as notícias automáticas não funcionam?">
+    É necessário habilitar a extensão `allow_url_fopen` nas configurações do PHP.
+</FAQBox>
+
+<FAQBox title="Por que a licença está inválida?">
+    Verifique se houve uma troca de servidor ou domínio. Se houve, será necessário redefinir a licença para obter os novos dados de instalação.
+    Você pode fazer isso através da área do cliente ou pelo painel da licença. [Saiba mais...](/license#reset)
+</FAQBox>
+

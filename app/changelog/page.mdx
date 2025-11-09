@@ -1,0 +1,117 @@
+# Changelog
+
+## 5.3.0 - 02/01/2025 [#latest]
+- feat: otimiza conexão com banco de dados SQLite
+- feat: adiciona USERAGENT e FOLLOWLOCATION na requisição cURL
+- feat(admin): adiciona coluna 'situação' para verificar o status dos anúncios (Ativo, Expirado, Agendado)
+- feat(admin): Adiciona botão "Gerenciar Publicidade" ao adicionar/editar widget de publicidade
+- feat: adiciona módulo enquete
+- fix: atualiza ícone do Twitter para X
+- fix: corrige controle de volume do player no rodapé
+- fix: garantir compatibilidade verificando a versão do SQLite
+- fix(admin): corrigir seleção de categoria ao adicionar ou editar widget de publicidade
+- chore: atualizar .htaccess para restringir arquivos relacionados ao SQLite
+
+## 5.2.2 - 02/01/2025 [#v522]
+
+- fix: corrige remetente na classe de envios de e-mail
+- fix: corrige problema com o campo de data e hora no Safari
+- fix: usa isset() para evitar índice indefinido em 'news_auto' e 'news_auto_category'
+- fix: corrige limite de expiração para o cache de posts em notícias automáticas
+- refactor: otimiza lógica do método migrate na classe Update
+- refactor: otimiza url_generator() para manipulação de acentos e limpeza de string
+
+## 5.2.1 - 28/08/2024 [#v521]
+
+- fix: corrige controles de volume do player
+- chore: reduzir o atraso do recurso de arrastar e soltar
+
+## 5.2.0 - 20/08/2024 [#v520]
+
+- feat: adiciona suporte para inserir link do YouTube no Top Music
+- feat: adiciona suporte para inserir link do YouTube no Podcast
+- feat: adiciona delay no arrastar e soltar para evitar arraste acidental
+- fix: corrige bloqueio de sessão que causava atrasos na renderização da página
+- fix: corrige limpeza do cache das Notícias Automáticas
+- fix: corrige criação de pasta no Top Music
+- fix: corrige criação de pasta no Podcast
+- fix: corrige botão de opções nos widgets e no Top Music
+- fix: corrige capa das notícias automáticas
+
+## 5.1.1 - 02/08/2024 [#v511]
+
+- feat: adiciona novo tema similar à versão clássica da antiga plataforma
+- feat: adiciona opção para escolher imagem ou cor como plano de fundo
+- feat: adiciona opção para fixar o player no rodapé
+- feat: adiciona agrupamento de mensagens do chat por data e exibição de hora
+- chore: ajuste no layout do chat
+- feat: adiciona barra de saudação no dashboard e notificação de atualização
+- feat: adiciona placeholder de carregamento para o locutor no ar
+- fix: corrige contador de visitantes online para exibição correta
+- fix: corrige fuso horário para salvar dados corretamente
+- fix: corrige opções de inserir link no editor de texto
+
+## 5.1.0 - 15/07/2024 [#v510]
+
+- feat: adiciona sistema de migração do banco de dados
+- feat: adiciona sistema de cache para melhorar o desempenho da aplicação
+- fix: corrige link home na instação em subpasta
+- fix: corrige podcast - exibição de áudios persiste mesmo após desativação.
+- chore: Move arquivos de configuração para um diretório separado.
+- chore: mover arquivos load para pasta middleware
+- refactor: altera as funções session para os métodos da classe Session
+- refactor: consolidar funções de session em uma classe
+- refactor: consolidar as classes de conexão com banco de dados em uma nova classe
+- refactor: consolidar função sendMail para a nova classe Mail.
+- chore: remove arquivo não utilizados.
+
+## 5.0.8 - 08/06/2024 [#v508]
+
+- fix: corrige imagem do captcha nos dispositivos Apple.
+
+## 5.0.7 - 14/02/2024 [#v508]
+
+- build: Compatibilidade com PHP 7.1 ~ 7.4 & 8.1 ~ 8.2
+- fix: Segurança, bugs e otimização
+- feat: adiciona upload de imagem no WYSIWYG editor
+- fix: corrige upload - Orientação da imagem
+- feat: Agora é possível adicionar múltiplas publicidades nos widgets.
+- feat: adiciona banner de publicidade rotativo.
+- feat: adiciona novos idiomas: English, Español, Français
+- refactor: cortador de imagem do upload
+- feat(website): troca da fonte Roboto para Inter
+- feat: adiciona CAPTCHA nos formulários
+- feat: adiciona instruções e melhorias na instalação PWA
+
+## 5.0.3 - 04/09/2023 [#v503]
+
+- feat: adiciona personalização do esquema de cores do tema
+- feat: adiciona contador de cliques dos anúncios
+- feat: adiciona suporte upload GIF animado
+- feat: adiciona redefinição de senha - Administração
+- feat: adiciona Google Analytics no APP WEB
+- feat: adiciona ajuste do sistema de pontos
+- feat: adiciona no widget eventos hoje e próximos
+- feat: melhora Widgets
+- feat: melhora redefinição de senha - ouvintes
+
+## 5.0.2 - 01/07/2023 [#v502]
+
+- fix: Correção de bugs
+- fix: Correção e melhoria Chat.
+- feat: adiciona assistente de configurações iniciais
+- feat: adiciona contador de visitas e visitantes online
+- feat: adiciona todos os fusos horários
+- feat: adiciona Google AdSense
+
+## 5.0.1 - 29/05/2023 [#v501]
+
+- fix: Correção de bugs
+- feat: adiciona opção de forçar SSL - com www e sem www
+- feat: Adiciona opção de inserir URL Feed RSS
+- feat: adiciona editor HTML no widget
+- feat: adiciona legenda da imagem nas Notícias
+
+## 5.0.0 - 11/05/2023 [#v500]
+
+- Início da versão Rebuild - RádioBS

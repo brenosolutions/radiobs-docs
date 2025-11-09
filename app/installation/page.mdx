@@ -1,0 +1,51 @@
+import { Callout, Steps } from 'nextra/components'
+
+# Instalação
+Nesta seção, detalhamos os requisitos necessários para a utilização do nosso produto/serviço e fornecemos instruções claras sobre como instalar e configurar o mesmo.
+
+## Requisitos do Sistema [#requirements]
+Visão detalhada dos recursos mínimos necessários para garantir a compatibilidade e o desempenho ideal de nosso produto/serviço em seu ambiente. Certifique-se de revisar essas especificações antes de iniciar a instalação ou implementação, garantindo uma experiência sem problemas e aproveitando ao máximo todas as funcionalidades oferecidas.
+
+| #                                     | Recomendado           |
+| :------------------------------------ | :-------------------- |
+| Servidor                              | Apache ou similar     |
+| PHP Version	                          | 7.1 ~ 7.4 & 8.1 ~ 8.2 |
+| File Uploads	 	                      | Ligado                |
+| GD 	                                  | Ligado                |
+| IonCube Loader		                    | 13.0 ou superior      |
+| Allow Url Fopen		                    | Ligado                |
+| cURL		                              | Ligado                |
+| JSON		                              | Ligado                |
+| PDO SQLite	                          | Ligado                |
+| ZIP	                                  | Ligado                |
+| Session		                            | Ligado                |
+| Exif		                              | Ligado                |
+| Upload Max Filesize		                | 32M ou superior       |
+| Post Max Size		                      | 32M ou superior       |
+| Memory Limit		                      | 128MB ou superior     |
+| MImageMagick (opcional - upload GIF)	| Ligado                |
+
+<Callout type="warning" emoji="⚠️">
+  É essencial verificar se a versão da compilação do arquivo baixado corresponde à versão do PHP.
+</Callout>
+
+1. Para verificar a compatibilidade do seu servidor, utilize nossa ferramenta de teste de requisitos necessários para instalação. [Download da Ferramenta](https://www.lugsoft.com.br/downloads/reqs.zip)
+2. Após o download, descompacte o arquivo reqs.zip e envie o arquivo resultante reqs.php para o diretório raiz do seu servidor.
+3. Para verificar os resultados dos requisitos necessários, acesse o seguinte URL no seu navegador: `seudominio.com.br/reqs.php`
+4. Analise os resultados exibidos pela página reqs.php e certifique-se de habilitar quaisquer módulos adicionais necessários conforme indicado no teste, para garantir o funcionamento adequado do sistema.
+
+## Instalando [#installing]
+
+<Steps>
+### Envio dos Arquivos para Hospedagem [#install-step-1]
+Baixe e descompacte o arquivo zip fornecido do Sistema RádioBS, junto com a chave de licença. Faça o upload de todos os arquivos que estão na pasta Script PHP para a raiz do seu domínio principal ou subdomínio.
+
+### Acesso ao Painel Administrativo [#install-step-2]
+Acesse `seudominio.com.br/admin` e insira sua chave de licença fornecida. Faça login utilizando as seguintes credenciais padrão:
+
+- **Usuário:** admin
+- **senha:** admin
+
+### Chave de Licença [#install-step-3]
+A quantidade de instalações por domínio dependerá do tipo de licença contratada. Confira todas as licenças disponíveis em https://www.lugsoft.com.br/radiobs.
+</Steps>
